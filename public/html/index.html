@@ -2,15 +2,260 @@
 <html lang="ja"> 
    <head> 
       <meta charset="UTF-8">  
-      <link rel="stylesheet" href="../css/style.css">  
-      <title>Github Pages のハンズオン</title>  
+      <title>MyPortfolio</title>  
+      <meta name="Miwa Hinataのポートフォリオ">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+       <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="../css/style.css">  
+        
+        <style>
+			.html{
+				font-size: 8rem;
+			}
+			.header{
+				display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                height: 300px;                   
+                padding: 1rem 0;                
+                background-color: #00afcc;
+                font-family: "Didot", serif;
+                color: ghostwhite;
+			}
+			.header h1 {
+                font-size: 3rem;                 
+                margin-top: 2rem;             
+                margin-bottom: 0;            
+            }
+			.nav{
+				display: flex;
+				justify-content: center;
+				gap: 2.5rem;
+                list-style: none;
+                padding: 0;
+                margin: 0 0 1rem 0;
+            }
+             .nav li {
+                margin: 0 20px;
+            }
+
+            .nav a {
+                height: 30px;
+                line-height: 30px;
+                font-size: 1.5rem;
+                font-family: "cursive";
+                color:ghostwhite;
+                text-decoration: none;
+             }
+             
+             section{
+				 margin-bottom: 3rem; 
+			 }
+             .aboutme{
+				 background-color:#ffedab;
+				 color: #4e454a;
+			 }
+             h2{
+				  text-align: center;   
+                  font-size: 2.5rem;        
+                  padding-top: 1.5rem;    
+                  margin-top: 2rem;
+                  margin-bottom: 1.5rem;    
+                  font-family: "Didot", serif; 
+                   color: #4e454a;
+                  
+			 }
+             
+             .profile{
+				 display: flex;            
+                 align-items: center;      
+                 gap: 2rem;              
+                 margin-left: 100px; 
+                 font-size: 20px;
+                 font-family: 'Yu Gothic UI',sans-serif;
+			 }
+			 .profile-img {
+                 width: 280px;
+                 height: auto;
+                 border-radius: 8px; 
+                 margin-left: 100px;      
+             }
+             .profile ul li {
+                 margin-bottom: 1rem;
+             }
+             .name{
+				 font-size: 15px;
+				 padding-left: 4rem;
+				 padding-bottom: 4rem;
+			 }
+			 .birth{
+				 font-size: 15px;
+				 padding-left: 4.5rem;
+				 padding-bottom: 4rem;
+			 }
+			  .lived{
+				 font-size: 15px;
+				 padding-left: 4.5rem;
+				 padding-bottom: 4rem;
+			 }
+			 .jobs{
+				 font-size: 15px;
+				 padding-left: 4.5rem;
+				 padding-bottom: 4rem;
+			 }
+			 
+			 
+			 .skills{
+				 background-color: #a1d8e2;
+				 padding: 2rem 0; 
+				  color: #4e454a;
+			 }
+			 .skill-box {
+                 display: flex;
+                 gap: 3rem;
+                 justify-content: center;
+                 flex-wrap: wrap;
+             }
+             .skill-set {
+                  width: 400px;
+                  font-size: 1.1rem;
+                  font-family: 'Yu Gothic UI', sans-serif;
+             }
+             .skill-set img {
+                  width: 100%;
+                  height: auto;
+                  border-radius: 8px;
+             }
+             .myskills {
+                  margin-top: 1rem;
+                  display: flex;
+                  flex-direction: row;
+                  gap: 0.5rem;
+             }
+             .skillwork ul {
+                  margin-top: 1rem;
+                  padding-left: 1.2rem;
+             }
+             .footer{
+				 background-color: #e3acae;
+				  color: #4e454a;
+			 }
+			 .contact{
+				 margin:auto;
+				 padding:  0 0.5rem;
+				 border-spacing: 0;
+				 text-align: center;
+				 font-size: 20px;
+			 }
+			 .contact td {
+                 padding-left: 20px;
+             }
+		</style>
    </head> 
-   <body> 
-      <h1>Github Pages のハンズオン</h1> 
-      <p> 
-         こんにちは。<br> 
-         こちらは<span class="githubpages">Github Pages</span>から公開されている Web ページで 
-         す。 
-      </p> 
-   </body>  
+   
+   
+  
+   <body id="index">
+	  
+   <header class="header">
+	   <h1>WELCOME TO MY PORTFOLIO</h1>
+      <nav>
+         <ul class="nav">
+           <li><a href="aboutme.html">ABOUT ME</a></li>
+           <li><a href="skills.html">SKILLS</a></li>
+           <li><a href="contact.html">CONTACT</a></li>
+         </ul>
+      </nav>
+  </header>
+  
+  <section class="aboutme">
+	  <h2>ABOUT ME</h2>
+	  <div class="profile">
+	     <img src="../image/me.jpg" alt="me" class="profile-img">
+	     <ul>
+			 <li>NAME&nbsp;&nbsp;&nbsp;&nbsp;<span>三輪 陽 (MIWA HINATA)</span><br>
+			   <span class="name">「太陽のように明るく元気な子に、そして周りを照らせられる人に」という思いでつけてくれました</span>
+			 </li>
+			   
+			 <li>BIRTH&nbsp;&nbsp;&nbsp;&nbsp;<span class="bd-detail">2001/3/26 @京都</span><br>
+			   <span class="birth">すぐに横浜に引っ越したため記憶はありませんが、今でも年末年始は京都で過ごします！</span>
+			 </li>
+			   
+			 <li>LIVED&nbsp;&nbsp;&nbsp;&nbsp;<span class="lived-detail">横浜、名古屋、石川</span><br>
+			   <span class="lived">横浜で育ちました！幼稚園の頃に名古屋、大人になって石川でも暮らしました</span>
+            </li>
+			 
+			 <li>JOBS&nbsp;&nbsp;&nbsp;&nbsp;<span class="jobs-detail">ジュエリー販売員、ウェディングプランナー</span><br>
+			   <span class="jobs">主に接客をしてきました。人と話すことは好きなことであり得意です！</span></li>
+		 </ul>
+		 </div>
+  </section>
+  
+  <section class="skills">
+	  <h2>SKILLS</h2>
+	  
+      <div class="skill-box">
+		  
+	  <div class="skill-set">
+	  <img src="../image/pc.jpg" alt="pc" class="pc-img">
+	  <div class="myskills">
+	     <div class="skill">Java</div>
+	     <div class="skill">Oracle</div>
+	     <div class="skill">HTML/CSS</div>
+	  </div>
+	  <div class="skillwork">
+		  <ul>	   
+			 <li>JavaとOracleの実装を学びました。<br>
+			     私が取り組んだ練習問題をまとめたGitリポジトリです。<br>
+			     下記リンクよりご覧ください。<br>
+			     <a href="https://github.com/miwa-hinata/sample.git">練習問題Gitリポジトリはこちら</a></li>
+			     また、2人1組のチーム開発演習ではJDBCを活用した、<br>
+			     コンソールアプリケーションの開発に取り組みました。<br>
+			     こちらも下記リンクのGitリポジトリよりご覧ください。<br>
+			     <a href="https://github.com/y-kanayama-knowledge/consoleapp_Kanayana_Miwa">チーム開発演習Gitリポジトリはこちら</a></li>
+			     
+			 <li>
+				HTML/CSSの基礎を習得し、実践演習として<br>
+				このポートフォリオサイトを制作しました。</li>
+		 </ul>
+	  </div>
+	  </div>
+	  
+	  <div class="skill-set">
+	  <img src="../image/note2.webp" alt="note" class="note-img">
+	   <div class="myskills">
+	     <div class="skill">Notion</div>
+	  </div>
+	  <div class="skillwork">
+		  <ul>	   
+			 <li>これまで学んだ内容をまとめたNotionサイトです。ぜひ下記リンクよりご覧ください。<br>
+		         <a href="https://www.notion.so/_-22bc614e649c80d49ba6eec89ec283e7">Notion サイトはこちら</a>
+		     </li>
+		 </ul>
+	  </div>
+	  </div>
+	  </div>
+  </section>
+  
+  <footer class="footer">
+	  <h2>CONTACT</h2>
+	  <table class="contact">
+		  <tr>
+			  <th>TEL</th>
+			  <td>xxx-xxxx-xxxx</td>
+		  </tr>
+	  </table>
+	  
+  </footer>
+ 
+  </body>
+  
 </html> 
