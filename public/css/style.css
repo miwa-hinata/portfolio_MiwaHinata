@@ -2,4 +2,276 @@
 span.githubpages {  
 color: #FF0000; 
 font-weight: bold; 
+}
+
+.html{
+	font-size: 8rem;
+}
+.header{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;                   
+    padding: 1rem 0;                
+    background-color: #00afcc;
+    font-family: "Didot", serif;
+    color: ghostwhite;
+}
+.header h1 {
+    font-size: 4rem;                 
+    margin-top: 4rem;             
+    margin-bottom: 0;            
+}
+
+/*プロフィール*/
+.profile{
+    background-color: #ffedab;
+    color: #4e454a;
+    padding: 2rem 0 3rem 40px;
+}
+.profile h2{
+    font-size: 3.5rem;        
+    padding-top: 1.5rem;    
+    margin-bottom: 1.5rem;    
+    font-family: "Didot", serif; 
+    text-align: center;
+}           
+.profile-content {
+    display: flex; 
+    align-items: flex-start;
+    justify-content: center; 
+    width: 90%; 
+    margin: 0 auto; 
 } 
+.profile .image {
+    margin-right: 2rem; 
+}
+.profile .image img {
+    width: 350px; 
+    height: auto;
+    border-radius: 10%;
+}
+.profile .profile-text {
+    max-width: 850px;
+}
+.profile .name {
+    font-size: 23px;
+    margin-bottom: 1rem;
+}
+.profile .aboutme {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+			 
+/*スキル*/
+.skills {
+  background-color: #a1d8e2;
+  color: #4e454a;
+  padding: 2rem 0;
+}
+
+.skills h2 {
+  font-size: 3.5rem;
+  padding-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-family: "Didot", serif;
+  text-align: center;
+}
+
+.skills-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.skills-left,
+.skills-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  min-width: 320px;
+}
+
+.image-pc img {
+  width: 540px;
+  height: auto;
+  border-radius: 10%;
+  margin-bottom: 1.5rem;
+}
+
+.image-note img {
+  width: 580px;
+  height: auto;
+  border-radius: 10%;
+  margin-bottom: 1.5rem;
+}
+
+.skill-languege {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  font-size: 1.1rem;
+  width: 100%;
+  max-width: 700px;
+}
+
+.skill-item {
+  border-radius: 10px;
+}
+
+.notes {
+  font-size: 1.1rem;
+  text-align: left;
+  max-width: 600px;
+  padding: 0 1rem;
+}
+
+.notes a {
+  color: #333;
+  text-decoration: underline;
+}
+
+.notes ul {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+
+/*コンタクト*/
+.contact{
+	background-color: #00afcc;
+	color:ghostwhite;
+	margin:auto;
+	padding: 2rem 0;
+	text-align: center;
+	font-size: 20px;
+}
+.contact h2{
+	font-family: "Didot", serif;
+	font-size: 3.5rem;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem; 
+  margin-top: 2rem;
+}
+.contact-form label {
+  font-weight: bold;
+  align-self: flex-start;
+  margin-left: 20%;
+}
+.contact-form input[type="text"],
+.contact-form textarea {
+  width: 60%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.contact-form input[type="submit"] {
+  width: 30%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #00afcc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #e0f7fc;
+}
+
+/*コピーライト*/
+.copyright{
+	background-color: #e3acae;
+	text-align: center;
+	padding: 2rem 0;
+	color: ghostwhite;
+}
+
+
+/*スマホ対応 */
+@media (max-width: 768px) {
+  
+  .header {
+    height: auto;
+    padding: 1rem;
+  }
+  .header h1 {
+    font-size: 2.5rem; 
+    margin-top: 1rem;
+  }
+
+  /* プロフィール */
+  .profile {
+    padding: 2rem 1rem 3rem 1rem; 
+  }
+  .profile-content {
+    flex-direction: column; 
+    align-items: center;
+    margin: 0 auto;
+  }
+  .profile .image {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  .profile .image img {
+    width: 250px; 
+  }
+  .profile .profile-text {
+    max-width: 100%; 
+  }
+  
+  /* スキル */
+  .skills-content {
+    flex-direction: column; 
+    gap: 1rem; 
+    align-items: center;
+  }
+  .skills-left, .skills-right {
+    flex: none; 
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .skills-left img, .skills-right img {
+    width: 100%; 
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  /* スキル*/
+  .skill-languege {
+    grid-template-columns: 1fr; 
+    gap: 1rem;
+  }
+
+  /* コンタクト */
+  .contact-form input[type="text"],
+  .contact-form textarea {
+    width: 80%; 
+    font-size: 1rem; 
+  }
+  .contact-form input[type="submit"] {
+    width: 80%;
+    padding: 1rem;
+  }
+
+  /* コピーライト */
+  .copyright {
+    font-size: 1rem; 
+  }
+
+}

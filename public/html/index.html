@@ -15,150 +15,6 @@
         
         <link rel="stylesheet" href="../css/style.css">  
         
-        <style>
-			.html{
-				font-size: 8rem;
-			}
-			.header{
-				display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-                height: 300px;                   
-                padding: 1rem 0;                
-                background-color: #00afcc;
-                font-family: "Didot", serif;
-                color: ghostwhite;
-			}
-			.header h1 {
-                font-size: 3rem;                 
-                margin-top: 2rem;             
-                margin-bottom: 0;            
-            }
-			.nav{
-				display: flex;
-				justify-content: center;
-				gap: 2.5rem;
-                list-style: none;
-                padding: 0;
-                margin: 0 0 1rem 0;
-            }
-             .nav li {
-                margin: 0 20px;
-            }
-
-            .nav a {
-                height: 30px;
-                line-height: 30px;
-                font-size: 1.5rem;
-                font-family: "cursive";
-                color:ghostwhite;
-                text-decoration: none;
-             }
-             
-             section{
-				 margin-bottom: 3rem; 
-			 }
-             .aboutme{
-				 background-color:#ffedab;
-				 color: #4e454a;
-			 }
-             h2{
-				  text-align: center;   
-                  font-size: 2.5rem;        
-                  padding-top: 1.5rem;    
-                  margin-top: 2rem;
-                  margin-bottom: 1.5rem;    
-                  font-family: "Didot", serif; 
-                   color: #4e454a;
-                  
-			 }
-             
-             .profile{
-				 display: flex;            
-                 align-items: center;      
-                 gap: 2rem;              
-                 margin-left: 100px; 
-                 font-size: 20px;
-                 font-family: 'Yu Gothic UI',sans-serif;
-			 }
-			 .profile-img {
-                 width: 280px;
-                 height: auto;
-                 border-radius: 8px; 
-                 margin-left: 100px;      
-             }
-             .profile ul li {
-                 margin-bottom: 1rem;
-             }
-             .name{
-				 font-size: 15px;
-				 padding-left: 4rem;
-				 padding-bottom: 4rem;
-			 }
-			 .birth{
-				 font-size: 15px;
-				 padding-left: 4.5rem;
-				 padding-bottom: 4rem;
-			 }
-			  .lived{
-				 font-size: 15px;
-				 padding-left: 4.5rem;
-				 padding-bottom: 4rem;
-			 }
-			 .jobs{
-				 font-size: 15px;
-				 padding-left: 4.5rem;
-				 padding-bottom: 4rem;
-			 }
-			 
-			 
-			 .skills{
-				 background-color: #a1d8e2;
-				 padding: 2rem 0; 
-				  color: #4e454a;
-			 }
-			 .skill-box {
-                 display: flex;
-                 gap: 3rem;
-                 justify-content: center;
-                 flex-wrap: wrap;
-             }
-             .skill-set {
-                  width: 400px;
-                  font-size: 1.1rem;
-                  font-family: 'Yu Gothic UI', sans-serif;
-             }
-             .skill-set img {
-                  width: 100%;
-                  height: auto;
-                  border-radius: 8px;
-             }
-             .myskills {
-                  margin-top: 1rem;
-                  display: flex;
-                  flex-direction: row;
-                  gap: 0.5rem;
-             }
-             .skillwork ul {
-                  margin-top: 1rem;
-                  padding-left: 1.2rem;
-             }
-             .footer{
-				 background-color: #e3acae;
-				  color: #4e454a;
-			 }
-			 .contact{
-				 margin:auto;
-				 padding:  0 0.5rem;
-				 border-spacing: 0;
-				 text-align: center;
-				 font-size: 20px;
-			 }
-			 .contact td {
-                 padding-left: 20px;
-             }
-		</style>
    </head> 
    
    
@@ -167,94 +23,115 @@
 	  
    <header class="header">
 	   <h1>WELCOME TO MY PORTFOLIO</h1>
-      <nav>
-         <ul class="nav">
-           <li><a href="aboutme.html">ABOUT ME</a></li>
-           <li><a href="skills.html">SKILLS</a></li>
-           <li><a href="contact.html">CONTACT</a></li>
-         </ul>
-      </nav>
   </header>
   
-  <section class="aboutme">
-	  <h2>ABOUT ME</h2>
-	  <div class="profile">
-	     <img src="../image/me.jpg" alt="me" class="profile-img">
-	     <ul>
-			 <li>NAME&nbsp;&nbsp;&nbsp;&nbsp;<span>三輪 陽 (MIWA HINATA)</span><br>
-			   <span class="name">「太陽のように明るく元気な子に、そして周りを照らせられる人に」という思いでつけてくれました</span>
-			 </li>
-			   
-			 <li>BIRTH&nbsp;&nbsp;&nbsp;&nbsp;<span class="bd-detail">2001/3/26 @京都</span><br>
-			   <span class="birth">すぐに横浜に引っ越したため記憶はありませんが、今でも年末年始は京都で過ごします！</span>
-			 </li>
-			   
-			 <li>LIVED&nbsp;&nbsp;&nbsp;&nbsp;<span class="lived-detail">横浜、名古屋、石川</span><br>
-			   <span class="lived">横浜で育ちました！幼稚園の頃に名古屋、大人になって石川でも暮らしました</span>
-            </li>
-			 
-			 <li>JOBS&nbsp;&nbsp;&nbsp;&nbsp;<span class="jobs-detail">ジュエリー販売員、ウェディングプランナー</span><br>
-			   <span class="jobs">主に接客をしてきました。人と話すことは好きなことであり得意です！</span></li>
-		 </ul>
-		 </div>
-  </section>
+    <section class="profile">
+		 <h2>PROFILE</h2>
+	  <div class="profile-content">
+	     <figure class="image"><img src="../image/me1.jpg" alt="me" ></figure>
+	  <div class="profile-text">
+	     <p class="name">
+			 三輪 陽<br>
+			 HINATA MIWA
+		 </p>
+	     <p class="aboutme">
+			京都生まれ横浜育ち。美味しいご飯と旅行が大好きな24歳。<br>
+			転勤族だったこともあり、愛知や石川でも暮らしてきました。<br>
+			夢は日本全国旅すること。その地域の人と接し、温かみを感じることが大好きです。<br>
+			幼少期から学生時代はバトントワリングに没頭し、全国大会にも出場しました。<br>
+			今までは、ウェディングプランナーやジュエリー販売員など、主に接客業をしておりました。<br>
+			自分の仕事の選択肢を増やしたいという思いから、以前より興味のあったIT企業へ転職し日々勉強しています。
+		 </p>
+	   </div>
+	  </div>
+	</section>
   
-  <section class="skills">
-	  <h2>SKILLS</h2>
-	  
-      <div class="skill-box">
-		  
-	  <div class="skill-set">
-	  <img src="../image/pc.jpg" alt="pc" class="pc-img">
-	  <div class="myskills">
-	     <div class="skill">Java</div>
-	     <div class="skill">Oracle</div>
-	     <div class="skill">HTML/CSS</div>
-	  </div>
-	  <div class="skillwork">
-		  <ul>	   
-			 <li>JavaとOracleの実装を学びました。<br>
-			     私が取り組んだ練習問題をまとめたGitリポジトリです。<br>
-			     下記リンクよりご覧ください。<br>
-			     <a href="https://github.com/miwa-hinata/sample.git">練習問題Gitリポジトリはこちら</a></li>
-			     また、2人1組のチーム開発演習ではJDBCを活用した、<br>
-			     コンソールアプリケーションの開発に取り組みました。<br>
-			     こちらも下記リンクのGitリポジトリよりご覧ください。<br>
-			     <a href="https://github.com/y-kanayama-knowledge/consoleapp_Kanayana_Miwa">チーム開発演習Gitリポジトリはこちら</a></li>
-			     
-			 <li>
-				HTML/CSSの基礎を習得し、実践演習として<br>
-				このポートフォリオサイトを制作しました。</li>
-		 </ul>
-	  </div>
-	  </div>
-	  
-	  <div class="skill-set">
-	  <img src="../image/note2.webp" alt="note" class="note-img">
-	   <div class="myskills">
-	     <div class="skill">Notion</div>
-	  </div>
-	  <div class="skillwork">
-		  <ul>	   
-			 <li>これまで学んだ内容をまとめたNotionサイトです。ぜひ下記リンクよりご覧ください。<br>
-		         <a href="https://www.notion.so/_-22bc614e649c80d49ba6eec89ec283e7">Notion サイトはこちら</a>
-		     </li>
-		 </ul>
-	  </div>
-	  </div>
-	  </div>
-  </section>
   
-  <footer class="footer">
-	  <h2>CONTACT</h2>
-	  <table class="contact">
-		  <tr>
-			  <th>TEL</th>
-			  <td>xxx-xxxx-xxxx</td>
-		  </tr>
-	  </table>
+ <section class="skills">
+  <h2>SKILLS</h2>
+  <div class="skills-content">
+   
+    <div class="skills-left">
+      <figure class="image-pc"><img src="../image/pc.jpg" alt="PC"></figure>
+      <div class="skill-languege">
+        <div class="skill-item">
+          <h3>Java</h3>
+          <p>
+            ・Javaの基礎構文<br>(変数宣言、配列、条件分岐、繰り返し)<br>
+            ・Javaの独自構文<br>(クラス、メソッド、継承、カプセル化)<br>
+            ・Javaの応用構文<br>(コレクションフレームワーク、例外処理)<br>
+            ・Javaの基礎構文から実装までEclipseを使用し実践
+          </p>
+        </div>
+
+        <div class="skill-item">
+          <h3>Oracle</h3>
+          <p>
+            ・SQLの基礎構文<br>(select、insert、update、delete)<br>
+            ・SQLの応用構文(集約、結合、JDBC)<br>
+            ・ユーザーの作成からCRUD処理まで<br>幅広く習得。<br>JDBCを使用しチーム開発演習に取り組む
+          </p>
+        </div>
+
+        <div class="skill-item">
+          <h3>HTML</h3>
+          <p>
+            ・HTML<br>(HTML概要、タグの種類、フォーム)<br>
+            ・CSS<br>(プロパティの種類、ブロック構造、ページレイアウト)<br>
+          </p>
+        </div>
+
+        <div class="skill-item">
+          <h3>Spring</h3>
+          <p>
+            ・ネットワーク概要、サーバーとクライアント、Webアプリケーションの構造<br>
+            ・Spring概要、画面遷移、フォーム処理、スコープ、データベース操作、入力チェック、Thymeleaf
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-right">
+      <figure class="image-note"><img src="../image/note2.jpg" alt="note"></figure>
+      <div class="notes">
+        <a href="https://github.com/miwa-hinata/sample.git">練習問題Gitリポジトリはこちら</a><br>
+        <a href="https://github.com/y-kanayama-knowledge/consoleapp_Kanayana_Miwa">チーム開発演習Gitリポジトリはこちら</a>
+        <ul>
+          <li>
+            これまで学んだ内容をまとめたNotionサイトです。ぜひ下記リンクよりご覧ください。<br>
+            <a href="https://www.notion.so/_-22bc614e649c80d49ba6eec89ec283e7">Notion サイトはこちら</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  <footer class="contact">
+  <h2>CONTACT</h2>
+  <div class="cnt"></div>
+  
+  <form action="example.php" method="post" name="contact-form" class="contact-form">
+    <label for="name">NAME :</label>
+    <input type="text" id="name" name="name">
+    
+    <label for="email">E-mail :</label>
+    <input type="text" id="email" name="email">
+    
+    <label for="message">MESSAGE :</label>
+    <textarea id="message" name="message" rows="5"></textarea>
+    
+    <input type="submit" value="送信">
+  </form>
+</footer>
+
+  <div class="copyright">
+		  <small>&copy;2025 My Portfolio</small>
+  </div>
 	  
-  </footer>
+  
  
   </body>
   
