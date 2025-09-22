@@ -129,7 +129,7 @@ font-weight: bold;
 .notes {
   font-size: 1.1rem;
   text-align: left;
-  max-width: 600px;
+  max-width: 620px;
   padding: 0 1rem;
 }
 
@@ -196,10 +196,10 @@ font-weight: bold;
 
 /*コピーライト*/
 .copyright{
-	background-color: #e3acae;
+	background-color:#e3acae;
 	text-align: center;
 	padding: 2rem 0;
-	color: ghostwhite;
+	color: floralwhite;
 }
 
 
