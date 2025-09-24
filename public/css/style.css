@@ -4,8 +4,8 @@ color: #FF0000;
 font-weight: bold; 
 }
 
-.html{
-	font-size: 8rem;
+html{
+	font-size: 80%;
 }
 
 .header{
@@ -32,7 +32,7 @@ font-weight: bold;
     padding: 2rem 0 3rem 40px;
 }
 .profile h2{
-    font-size: 3.5rem;        
+    font-size: 3rem;        
     padding-top: 1.5rem;    
     margin-bottom: 1.5rem;    
     font-family: "Didot", serif; 
@@ -49,7 +49,7 @@ font-weight: bold;
     margin-right: 2rem; 
 }
 .profile .image img {
-    width: 350px; 
+    width: 270px; 
     height: auto;
     border-radius: 10%;
 }
@@ -74,7 +74,7 @@ font-weight: bold;
 }
 
 .skills h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   padding-top: 1.5rem;
   margin-bottom: 1.5rem;
   font-family: "Didot", serif;
@@ -100,15 +100,9 @@ font-weight: bold;
   min-width: 320px;
 }
 
-.image-pc img {
-  width: 540px;
-  height: auto;
-  border-radius: 10%;
-  margin-bottom: 1.5rem;
-}
-
+.image-pc img,
 .image-note img {
-  width: 580px;
+  width: 450px;
   height: auto;
   border-radius: 10%;
   margin-bottom: 1.5rem;
