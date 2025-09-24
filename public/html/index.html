@@ -14,18 +14,22 @@
         <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
         
         <link rel="stylesheet" href="../css/style.css">  
-        
    </head> 
    
    
-  
-   <body id="index">
-	  
+   <body>  
    <header class="header">
 	   <h1>WELCOME TO MY PORTFOLIO</h1>
-  </header>
+	   <nav class="nav">
+          <ul>
+             <li><a href="#profile">PROFILE</a></li>
+             <li><a href="#skills">SKILLS</a></li>
+             <li><a href="#contact">CONTACT</a></li>
+          </ul>
+       </nav>
+   </header>
   
-    <section class="profile">
+    <section id="profile">
 		 <h2>PROFILE</h2>
 	  <div class="profile-content">
 	     <figure class="image"><img src="../image/me1.jpg" alt="me" ></figure>
@@ -47,7 +51,7 @@
 	</section>
   
   
- <section class="skills">
+ <section id="skills">
   <h2>SKILLS</h2>
   <div class="skills-content">
    
@@ -108,19 +112,24 @@
 </section>
 
 
-  <footer class="contact">
+  <footer id="contact">
   <h2>CONTACT</h2>
-  <div class="cnt"></div>
   
-  <form action="example.php" method="post" name="contact-form" class="contact-form">
-    <label for="name">NAME :</label>
-    <input type="text" id="name" name="name">
+  <form action="contact.php" method="post" name="contact-form" class="contact-form">
+	 <div class="form-group">
+       <label for="name">NAME :</label>
+       <input type="text" id="name" name="name">
+     </div>
     
-    <label for="email">E-mail :</label>
-    <input type="text" id="email" name="email">
+     <div class="form-group">
+       <label for="email">E-mail :</label>
+       <input type="text" id="email" name="email">
+     </div>
     
-    <label for="message">MESSAGE :</label>
-    <textarea id="message" name="message" rows="5"></textarea>
+     <div class="form-group">
+       <label for="message">MESSAGE :</label>
+       <textarea id="message" name="message" rows="5"></textarea>
+     </div>
     
     <input type="submit" value="送信">
   </form>
@@ -129,9 +138,6 @@
   <div class="copyright">
 		  <small>&copy;2025 My Portfolio</small>
   </div>
-	  
-  
- 
   </body>
   
 </html> 

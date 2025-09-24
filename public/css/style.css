@@ -7,32 +7,48 @@ font-weight: bold;
 html{
 	font-size: 70%;
 }
+html, body {
+  overflow-x: hidden;
+}
 
 .header{
 	display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 300px;                   
+    height: 250px;                   
     padding: 1rem 0;                
     background-color: #00afcc;
     font-family: "Didot", serif;
     color: ghostwhite;
 }
 .header h1 {
-    font-size: 4rem;                 
+    font-size: 5rem;                 
     margin-top: 4rem;             
     margin-bottom: 0;            
 }
+.nav ul {
+  font-size: 2.3rem;
+  list-style: none;
+  margin: 1rem;
+  padding: 0;
+  display: flex;          
+  justify-content: center;
+  gap: 3rem;             
+}
+.nav ul a {
+  color: white;
+}
+
 
 /*プロフィール*/
-.profile{
+#profile{
     background-color: #ffedab;
     color: #4e454a;
-    padding: 2rem 0 3rem 40px;
+    padding: 2rem 1rem 3rem 1rem;
 }
-.profile h2{
-    font-size: 3rem;        
+#profile h2{
+    font-size: 4rem;        
     padding-top: 1.5rem;    
     margin-bottom: 1.5rem;    
     font-family: "Didot", serif; 
@@ -45,36 +61,36 @@ html{
     width: 90%; 
     margin: 0 auto; 
 } 
-.profile .image {
+#profile .image {
     margin-right: 2rem; 
 }
-.profile .image img {
+#profile .image img {
     width: 270px; 
     height: auto;
     border-radius: 10%;
 }
-.profile .profile-text {
+#profile .profile-text {
     max-width: 850px;
 }
-.profile .name {
-    font-size: 23px;
+#profile .name {
+    font-size: 20px;
     margin-bottom: 1rem;
 }
-.profile .aboutme {
-    font-size: 17px;
+#profile .aboutme {
+    font-size: 14px;
     line-height: 1.6;
     margin-bottom: 2rem;
 }
 			 
 /*スキル*/
-.skills {
+#skills {
   background-color: #a1d8e2;
   color: #4e454a;
   padding: 2rem 0;
 }
 
-.skills h2 {
-  font-size: 3rem;
+#skills h2 {
+  font-size: 3.5rem;
   padding-top: 1.5rem;
   margin-bottom: 1.5rem;
   font-family: "Didot", serif;
@@ -102,7 +118,7 @@ html{
 
 .image-pc img,
 .image-note img {
-  width: 450px;
+  width: 350px;
   height: auto;
   border-radius: 10%;
   margin-bottom: 1.5rem;
@@ -139,7 +155,7 @@ html{
 }
 
 /*コンタクト*/
-.contact{
+#contact{
 	background-color: #00afcc;
 	color:ghostwhite;
 	margin:auto;
@@ -147,7 +163,7 @@ html{
 	text-align: center;
 	font-size: 20px;
 }
-.contact h2{
+#contact h2{
 	font-family: "Didot", serif;
 	font-size: 3.5rem;
 }
@@ -155,17 +171,25 @@ html{
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem; 
+  gap: 1.5rem; 
   margin-top: 2rem;
 }
+.contact-form .form-group{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  width: 100%; 
+}
 .contact-form label {
+  font-size: 1.5rem;
+  width: 120px; 
   font-weight: bold;
-  align-self: flex-start;
-  margin-left: 20%;
+  text-align: left;
 }
 .contact-form input[type="text"],
 .contact-form textarea {
-  width: 60%;
+  width: 100%;
+  max-width: 700px;
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -209,6 +233,9 @@ html{
     font-size: 2.5rem; 
     margin-top: 1rem;
   }
+  .nav ul{
+	font-size: 1.5rem;
+  }
 
   /* プロフィール */
   .profile {
@@ -246,8 +273,6 @@ html{
     height: auto;
     margin-bottom: 1rem;
   }
-
-  /* スキル*/
   .skill-languege {
     grid-template-columns: 1fr; 
     gap: 1rem;
@@ -256,13 +281,27 @@ html{
   /* コンタクト */
   .contact-form input[type="text"],
   .contact-form textarea {
-    width: 80%; 
-    font-size: 1rem; 
+    width: 90%; 
+    font-size: 1.1rem; 
   }
   .contact-form input[type="submit"] {
-    width: 80%;
-    padding: 1rem;
+    width: 50%;
+    padding: 1.1rem;
   }
+  .contact-form .form-group {
+    flex-direction: column;
+    align-items: stretch;
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 4.5rem;
+  }
+  .contact-form label {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+    text-align: left;
+  }
+
 
   /* コピーライト */
   .copyright {
