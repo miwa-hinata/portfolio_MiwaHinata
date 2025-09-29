@@ -4,11 +4,7 @@ span.githubpages {
 color: #FF0000; 
 font-weight: bold; 
 }
-.zen-maru-gothic-regular {
-  font-family: "Zen Maru Gothic", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+
 
 
 html{
@@ -17,6 +13,12 @@ html{
 html, body {
   overflow-x: hidden;
 }
+body{
+	font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
 
 .header{
 	display: flex;
@@ -80,6 +82,7 @@ html, body {
     max-width: 850px;
 }
 #profile .name {
+	font-family: "Didot", serif;
     font-size: 20px;
     margin-bottom: 1rem;
 }
@@ -142,6 +145,9 @@ html, body {
 
 .skill-item {
   border-radius: 10px;
+}
+.skill-item h3 {
+	font-family: "Didot", serif;
 }
 
 .notes {
