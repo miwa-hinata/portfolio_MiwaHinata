@@ -12,6 +12,8 @@ html{
 }
 html, body {
   overflow-x: hidden;
+  padding: 0;
+  margin: 0;
 }
 body{
 	font-family: "Zen Maru Gothic", sans-serif;
@@ -109,7 +111,7 @@ body{
 
 .skills-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 2rem;
@@ -123,7 +125,7 @@ body{
   flex-direction: column;
   align-items: center;
   flex: 1;
-  min-width: 320px;
+  max-width: 600px;
 }
 
 .image-pc img,
@@ -220,6 +222,7 @@ body{
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  max-width: 300px;
 }
 
 .contact-form input[type="submit"]:hover {
